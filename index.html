@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Igor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  </head>
+  <body>
+
+    <div data-role="page">
+
+      <div data-role="header">
+        <h1>Igor</h1>
+      </div><!-- /header -->
+
+      <div data-role="content">
+        <center><img src="igor-min.jpg" alt="Igor" /></center>
+        <fieldset data-role="controlgroup">
+          <legend><center>Shall I respond for you, Master?</center></legend>
+          <form action="status.php" method="post">
+
+            <input type="radio" name="status" id="status-1" value="on" />    
+            <label for="status-1">Of Course...</label>
+
+            <input type="radio" name="status" id="status-2" value="off" />
+            <label for="status-2">No, Shutup!</label>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </fieldset> 
+      </div><!-- /content -->
+
+      <div data-role="footer" data-position="fixed" class="footer-docs ui-footer ui-bar-c" data-theme="c" role="contentinfo">
+        <center><p>&#169 2012 Matt Boroi</p></center>
+      </div><!-- /footer -->
+
+    </div><!-- /page -->
+
+  </body>
+</html>
